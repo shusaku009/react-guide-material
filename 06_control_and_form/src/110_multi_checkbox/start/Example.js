@@ -34,7 +34,6 @@ const Example = () => {
     <div>
       {fruits.map(fruit => {
         return (
-          <>
           <div key={fruit.label}>
             <input 
               id={fruit.label}
@@ -44,7 +43,6 @@ const Example = () => {
               onChange={handleChange} />
             <label htmlFor={fruit.label}>{fruit.label}:{fruit.value}</label>
           </div>
-          </>
         )
       })}
       <div>合計：{sum}</div>
