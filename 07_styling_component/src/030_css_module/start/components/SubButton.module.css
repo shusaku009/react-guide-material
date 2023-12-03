@@ -10,6 +10,24 @@
     background: orange;
 }
 
+.btn:hover {
+    background-color: red;
+}
+
+.btn:active {
+    background-color: purple;
+}
+
 .selected {
     background-color: pink;
+}
+
+@media (max-width: 600px) {
+    .btn {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
 }
