@@ -7,7 +7,7 @@ const Case1 = () => {
   const [value, setValue] = useState("");
   const inputRef = useRef();
 
-  // console.log(inputRef);
+  console.log(inputRef);
 
   return (
     <div>
