@@ -33,7 +33,7 @@ const Example = () => {
   };
 
   const numChangeHandler = (e) => {
-    dispatch({ type: "change", payload: { name: e.target.name, value: e.target.value } })
+    dispatch({ type: "change", payload: { name: e.target.name, value: parseInt(e.target.value) } })
   }
 
   return (
