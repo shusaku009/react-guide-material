@@ -10,8 +10,8 @@ const Header = () => {
     <header className={`content-${theme}`}>
         {THEMES.map(_theme => {
           return (
-            <label>
-              <input type="radio" key={_theme} value={_theme} checked={theme === _theme} onChange={changeTheme} />
+            <label key={_theme}>
+              <input type="radio" value={_theme} checked={theme === _theme} onChange={changeTheme} />
               {_theme}
             </label>
           )
