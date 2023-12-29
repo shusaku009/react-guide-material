@@ -4,9 +4,7 @@ const Example = () => {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    if(checked) {
-      window.alert('checked!');
-    }
+    checked && window.alert('checked!')
   }, [checked]);
 
   return (
