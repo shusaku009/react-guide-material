@@ -29,7 +29,7 @@ const Timer = () => {
       // console.log('end');
     }
   }, [isRunning])
-  
+
   useEffect(() => {
     // console.log('updated');
     
@@ -57,7 +57,7 @@ const Timer = () => {
     setTime(0);
     setIsRunning(false);
   };
-  
+
   return (
     <>
       <h3>
