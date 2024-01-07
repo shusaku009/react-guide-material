@@ -7,17 +7,18 @@ const counter = createSlice({
   },
   reducers: {
     add(state, { type, payload }) {
-      // state.count = state.count + payload
-      console.log(type, payload)
-      const newState = { ...state };
-      newState.count = state.count + payload
-      return newState;
+      state.count = state.count + payload
+      // console.log(type, payload)
+      // const newState = { ...state };
+      // newState.count = state.count + payload
+      // return newState;
     },
     minus(state, { type, payload }) {
-      console.log(type, payload)
-      const newState = { ...state };
-      newState.count = state.count - payload
-      return newState;
+      state.count = state.count - payload
+      // console.log(type, payload)
+      // const newState = { ...state };
+      // newState.count = state.count - payload
+      // return newState;
     }
   }
 })
