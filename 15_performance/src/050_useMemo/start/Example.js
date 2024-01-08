@@ -1,3 +1,4 @@
+// POINT useMemoで値をメモ化
 import React, { useCallback, useState } from "react";
 import Child from "./Child";
 
@@ -7,6 +8,7 @@ const Example = () => {
   const [countB, setCountB] = useState(0);
 
   const clickHandler = useCallback(() => {
+    console.log('countB', countB);
     setCountB(countB + 1);
   },[countB]);
   
@@ -34,4 +36,3 @@ const Example = () => {
 };
 
 export default Example;
-
