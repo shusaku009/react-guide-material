@@ -13,6 +13,7 @@ const Example = () => {
   const obj3 = {val:0};
   const obj2 = { ...obj1};
   const isSame = Object.is("",false);
+  console.log(isSame);
   const isSameEqual = "" == false;
   console.log(isSameEqual);
   
