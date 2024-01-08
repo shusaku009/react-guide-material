@@ -1,6 +1,14 @@
-import React from "react";
+import { memo } from "react";
 
-const Child = ({ countB }) => {
+function areEqual(prevProps, nextProps) {
+  if(prevProps.countB !== nextProps.countB) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+const ChildMemo = memo(({ countB }) => {
   console.log("%cChild render", "color: red;");
   return (
     <div className="child">
@@ -8,6 +16,6 @@ const Child = ({ countB }) => {
       <p>ボタンBクリック回数：{countB}</p>
     </div>
   );
-};
+}, areEqual);
 
-export default Child;
+export default ChildMemo;

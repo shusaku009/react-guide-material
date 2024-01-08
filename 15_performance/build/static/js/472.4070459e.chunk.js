@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_app_template=self.webpackChunkreact_app_template||[]).push([[472],{472:(e,t,a)=>{a.r(t),a.d(t,{default:()=>p});const p={}}}]);
+//# sourceMappingURL=472.4070459e.chunk.js.map
