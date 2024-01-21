@@ -14,7 +14,7 @@ const Example = () => {
     // startTranstion(() => {
     // setFilterVal(e.target.value);
     // })
-    setFilterVal(e.target.value)
+    setFilterVal(e.target.value);
   };
 
   const filteredItems = dummyItems
@@ -22,19 +22,15 @@ const Example = () => {
       if (filterVal === "") return true;
       return item.includes(filterVal);
     })
-    .map((item) => (
-      <li key={item}>{item}</li>
-    ))
+    .map((item) => <li key={item}>{item}</li>);
 
-  const deferredItems = useDeferredValue(filteredItems)
+  const deferredItems = useDeferredValue(filteredItems);
 
   return (
     <>
       <input type="text" onChange={changeHandler} />
       {/*isPending && <div>Loading...</div> */}
-      <ul>
-        {deferredItems}
-      </ul>
+      <ul>{deferredItems}</ul>
     </>
   );
 };
